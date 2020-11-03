@@ -43,4 +43,4 @@ fs.readdirSync("./routes/").forEach(fileName => require("./routes/" + fileName))
 server.get("*", (request, response) => response.redirect("/"));
 
 // Listen port :
-server.listen(3000);
+server.listen(3001);
