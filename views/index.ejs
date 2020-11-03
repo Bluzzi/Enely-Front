@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enely - Portfolio</title>
+
+    <link rel="icon" href="/images/favicon.png">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/base.css">
+
+    <link rel="stylesheet" href="/css/index.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="/javascripts/sketchfab.js"></script>
+    <script src="/javascripts/index.js"></script>
+</head>
+<body>
+    <div class="cloud"></div>
+
+    <header>
+        <video id="mecha-miner" class="entity" autoplay loop muted><source src="/images/entity/mecha-miner.webm" type="video/webm"></video>
+        <video id="dwarf" class="entity" autoplay loop muted><source src="/images/entity/dwarf.webm" type="video/webm"></video>
+
+        <img id="profil-picture" src="/images/logo/logo-left.png" alt="profil picture">
+
+        <h1 id="pseudo">Enely</h1>
+        <p id="description"><%- description %></p>
+
+        <div class="media">
+            <a href="https://discord.gg/kvUtXBrnm8" target="_blank"><img src="/images/media/discord.svg" alt="discord"></a>
+            <a href="https://twitter.com/Enely_" target="_blank"><img src="/images/media/twitter.svg" alt="twitter"></a>
+            <a href="https://sketchfab.com/Enely_" target="_blank"><img src="/images/media/sketchfab.png" alt="sketchfab"></a>
+        </div>
+    </header>
+
+    <section>
+        <div class="cloud-night"></div>
+
+        <div class="model">
+            <iframe id="model" title="A 3D model" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+
+        <div class="model-selector"></div>
+
+        <p><a href="https://twitter.com/Bluzzi_" target="_BLANK">Made with ❤️ by Bluzzi</a></p>
+    </section>
+
+    <script src="/javascripts/cloud.js"></script>
+    <script src="/javascripts/cloud-night.js"></script>
+</body>
+</html>
