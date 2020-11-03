@@ -40,10 +40,7 @@ server.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 // Routes and 404 error :
 fs.readdirSync("./routes/").forEach(fileName => require("./routes/" + fileName));
 
-server.get("*", function(request, response){
-    response.status(404);
-    response.render("error");
-});
+server.get("*", (request, response) => response.redirect("/"));
 
 // Listen port :
 server.listen(3000);
