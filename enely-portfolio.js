@@ -22,7 +22,6 @@ server.set("view engine", "ejs");
 server.set("views", __dirname + "/views");
 
 // Setup sessions and cookies :
-server.use(require("cookie-parser")());
 
 server.use(require("express-session")({
     secret: "0e47c47c-bc31-45ef-bc76-ba3b3158765e",
