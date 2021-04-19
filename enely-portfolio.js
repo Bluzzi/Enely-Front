@@ -21,17 +21,6 @@ server.set("view engine", "ejs");
 // Set view folder :
 server.set("views", __dirname + "/views");
 
-// Setup sessions and cookies :
-
-server.use(require("express-session")({
-    secret: "0e47c47c-bc31-45ef-bc76-ba3b3158765e",
-    resave: false,
-    saveUninitialized: true,
-    cookie: { 
-        secure: false // set in true if the website use https 
-    }
-}));
-
 // Routes and 404 error :
 fs.readdirSync(__dirname + "/routes/").forEach(fileName => require("./routes/" + fileName));
 
